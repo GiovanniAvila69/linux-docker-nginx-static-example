@@ -60,6 +60,24 @@ ln -s /ruta/a/tu/repositorio site
 ./scripts/deploy.sh
 ```
 
+## Instalar Docker y Docker Compose
+```bash
+sudo yum update -y
+sudo yum install -y docker
+```
+
+```bash
+sudo amazon-linux-extras install docker
+```
+
+```bash
+sudo systemctl enable --now docker
+sudo usermod -a -G docker ec2-user
+sudo mkdir -p /usr/libexec/docker/cli-plugins
+sudo curl -SL https://github.com/docker/compose/releases/latest/download/docker-compose-linux-$(uname -m) -o /usr/libexec/docker/cli-plugins/docker-compose
+sudo chmod +x /usr/libexec/docker/cli-plugins/docker-compose
+```
+
 ## Despliegue con Docker Compose
 
 ```bash
