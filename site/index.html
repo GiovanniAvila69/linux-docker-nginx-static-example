@@ -1,238 +1,55 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Son Goku | Guerrero Saiyajin</title>
-<link rel="stylesheet" href="assets/styles.css">
-</head>
-<body>
-
-  <!-- NAVBAR -->
-  <header class="navbar">
-    <div class="logo">DRAGON<span>BALL</span></div>
-    <nav>
-      <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#historia">Historia</a></li>
-        <li><a href="#transformaciones">Transformaciones</a></li>
-        <li><a href="#tecnicas">Técnicas</a></li>
-        <li><a href="#stats">Estadísticas</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- HERO -->
-  <section id="inicio" class="hero">
-    <div class="hero-bg"></div>
-    <div class="hero-content">
-      <p class="kanji">孫悟空</p>
-      <h1>SON <span>GOKU</span></h1>
-      <p class="subtitle">El guerrero Saiyajin criado en la Tierra</p>
-      <a href="#historia" class="btn">Conocer su historia</a>
-    </div>
-
-    <!-- Ilustración original hecha en SVG (dibujo vectorial, sin usar arte oficial) -->
-    <div class="goku-art">
-      <div class="art-aura"></div>
-      <svg viewBox="0 0 300 480" xmlns="http://www.w3.org/2000/svg" class="goku-svg">
-        <!-- sombra de piso -->
-        <ellipse cx="150" cy="460" rx="80" ry="14" fill="#000" opacity="0.35"/>
-
-        <!-- piernas -->
-        <path d="M120 300 L108 400 L118 402 L132 320 Z" fill="#1a2b52"/>
-        <path d="M180 300 L192 400 L182 402 L168 320 Z" fill="#1a2b52"/>
-
-        <!-- botas -->
-        <path d="M100 395 L122 395 L126 415 L96 418 Z" fill="#0d1730"/>
-        <path d="M200 395 L178 395 L174 415 L204 418 Z" fill="#0d1730"/>
-        <rect x="98" y="392" width="26" height="8" fill="#f2f2f2"/>
-        <rect x="176" y="392" width="26" height="8" fill="#f2f2f2"/>
-
-        <!-- torso / gi -->
-        <path d="M110 190 Q150 175 190 190 L200 300 Q150 320 100 300 Z" fill="#ff7a1a"/>
-        <path d="M110 190 Q150 175 190 190 L186 215 Q150 200 114 215 Z" fill="#d85e00"/>
-
-        <!-- cinturon -->
-        <rect x="103" y="278" width="94" height="16" fill="#2b6cb0"/>
-        <rect x="140" y="278" width="20" height="16" fill="#16324f"/>
-
-        <!-- brazos -->
-        <path d="M108 200 Q75 220 70 270 L88 278 Q98 235 122 210 Z" fill="#ff7a1a"/>
-        <path d="M192 200 Q225 220 230 270 L212 278 Q202 235 178 210 Z" fill="#ff7a1a"/>
-
-        <!-- muñequeras -->
-        <rect x="64" y="268" width="26" height="14" rx="3" fill="#0d1730"/>
-        <rect x="210" y="268" width="26" height="14" rx="3" fill="#0d1730"/>
-
-        <!-- manos -->
-        <circle cx="76" cy="285" r="12" fill="#f2b083"/>
-        <circle cx="224" cy="285" r="12" fill="#f2b083"/>
-
-        <!-- cuello -->
-        <rect x="140" y="150" width="20" height="24" fill="#f2b083"/>
-
-        <!-- cabeza -->
-        <circle cx="150" cy="120" r="46" fill="#f2b083"/>
-
-        <!-- cejas y ojos simplificados -->
-        <path d="M128 112 Q136 106 146 110" stroke="#1a1a1a" stroke-width="3" fill="none" stroke-linecap="round"/>
-        <path d="M154 110 Q164 106 172 112" stroke="#1a1a1a" stroke-width="3" fill="none" stroke-linecap="round"/>
-        <circle cx="137" cy="122" r="3.5" fill="#1a1a1a"/>
-        <circle cx="163" cy="122" r="3.5" fill="#1a1a1a"/>
-
-        <!-- pelo puntiagudo estilo saiyajin (forma original, no oficial) -->
-        <path d="M150 55
-                 L162 78 L178 58 L182 86 L200 68
-                 L196 96 L216 88 L204 112
-                 L188 108 L192 128 L170 116
-                 L168 96 L150 108
-                 L132 96 L130 116 L108 128
-                 L112 108 L96 112 L84 88
-                 L104 96 L100 68 L118 86
-                 L122 58 L138 78 Z"
-              fill="#141414"/>
-        <path d="M150 55 L162 78 L178 58 L182 86 L200 68 L196 96 L216 88 L204 112 L188 108 L192 128 L170 116 L168 96 L150 108 L132 96 L130 116 L108 128 L112 108 L96 112 L84 88 L104 96 L100 68 L118 86 L122 58 L138 78 Z"
-              fill="none" stroke="#000" stroke-width="1" opacity="0.4"/>
-
-        <!-- destello de energia en la mano -->
-        <circle cx="224" cy="285" r="20" fill="var(--gold)" opacity="0.5">
-          <animate attributeName="r" values="16;24;16" dur="1.8s" repeatCount="indefinite"/>
-          <animate attributeName="opacity" values="0.6;0.15;0.6" dur="1.8s" repeatCount="indefinite"/>
-        </circle>
-      </svg>
-    </div>
-  </section>
-
-  <!-- HISTORIA -->
-  <section id="historia" class="historia">
-    <h2>Su Historia</h2>
-    <div class="cards">
-      <div class="card">
-        <div class="icon">🐒</div>
-        <h3>Origen Saiyajin</h3>
-        <p>Nació en el planeta Vegeta y fue enviado a la Tierra siendo un bebé, donde un anciano llamado Son Gohan lo encontró y crió como a su propio nieto.</p>
-      </div>
-      <div class="card">
-        <div class="icon">🥋</div>
-        <h3>Entrenamiento</h3>
-        <p>Desde niño se entrenó en artes marciales, participando en múltiples torneos y aprendiendo técnicas junto a grandes maestros a lo largo de los años.</p>
-      </div>
-      <div class="card">
-        <div class="icon">🛡️</div>
-        <h3>Protector de la Tierra</h3>
-        <p>Se convirtió en el principal defensor del planeta, enfrentando amenazas cada vez más poderosas junto a sus aliados y su familia.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- TRANSFORMACIONES -->
-  <section id="transformaciones" class="transformaciones">
-    <h2>Transformaciones</h2>
-    <div class="transform-grid">
-      <div class="transform-item base">
-        <div class="orb"></div>
-        <h4>Base</h4>
-        <p>Su forma original, ya de por sí extremadamente poderosa.</p>
-      </div>
-      <div class="transform-item kaioken">
-        <div class="orb"></div>
-        <h4>Kaioken</h4>
-        <p>Una técnica que multiplica su poder a costa de un enorme desgaste físico.</p>
-      </div>
-      <div class="transform-item ssj1">
-        <div class="orb"></div>
-        <h4>Super Saiyajin</h4>
-        <p>Cabello dorado y una explosión de poder al superar un límite emocional extremo.</p>
-      </div>
-      <div class="transform-item ssj2">
-        <div class="orb"></div>
-        <h4>Super Saiyajin 2</h4>
-        <p>Un salto evolutivo con electricidad dorada rodeando su cuerpo.</p>
-      </div>
-      <div class="transform-item ssj3">
-        <div class="orb"></div>
-        <h4>Super Saiyajin 3</h4>
-        <p>Cabello largo y un poder devastador, aunque de gran costo de energía.</p>
-      </div>
-      <div class="transform-item blue">
-        <div class="orb"></div>
-        <h4>Super Saiyajin Blue</h4>
-        <p>La fusión del poder Saiyajin con el dominio del ki divino.</p>
-      </div>
-      <div class="transform-item ultra">
-        <div class="orb"></div>
-        <h4>Ultra Instinto</h4>
-        <p>Un estado donde el cuerpo se mueve y esquiva sin necesidad de pensar.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- TECNICAS -->
-  <section id="tecnicas" class="tecnicas">
-    <h2>Técnicas Características</h2>
-    <div class="tech-list">
-      <div class="tech">
-        <span class="tech-num">01</span>
-        <div>
-          <h4>Kamehameha</h4>
-          <p>Su ataque más icónico: concentra energía entre las manos y la libera en un potente rayo.</p>
+<html lang="en">
+    <head>  
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nier Automata</title>
+        <link rel="stylesheet" href="./assets/styles.css">
+    </head>
+    <body>
+        <div class="header"><h1>Nier Automata</h1></div>
+        
+        <div class="nav">
+            <div class="item">El Juego</div>
+            <div class="item">Historia</div>
+            <div class="item">Personajes</div>
         </div>
-      </div>
-      <div class="tech">
-        <span class="tech-num">02</span>
-        <div>
-          <h4>Genki Dama</h4>
-          <p>Reúne energía de todos los seres vivos de un planeta para crear una esfera devastadora.</p>
+        
+        <div class="main">
+            <div class="section"></div>
+            <div class="aside">
+                <h1>El Juego</h1>
+                <p>Videojuego de rol de acción desarrollado por PlatinumGames y publicado por Square Enix.
+                    Comparte el mismo universo que Nier, una serie derivada de la saga Drakengard. La historia sigue las batallas del androide de combate 2B y su compañero 9S en una guerra de poder entre las máquinas creadas por invasores de otro mundo y los restos de la humanidad.
+                </p>
+            </div>
         </div>
-      </div>
-      <div class="tech">
-        <span class="tech-num">03</span>
-        <div>
-          <h4>Teletransportación</h4>
-          <p>Le permite viajar instantáneamente a cualquier lugar donde perciba una energía conocida.</p>
+
+        <div class="article">
+            <h1>Historia</h1>
+            <p>
+                En el año 11945, la humanidad se ve obligada a abandonar la Tierra después de que una invasión de máquinas, creada por una raza alienígena desconocida, obligara a los humanos a huir a la Luna. En un intento por recuperar su planeta natal, los humanos envían androides de combate al campo de batalla para luchar contra las máquinas. El juego sigue a dos androides de combate, 2B y 9S, mientras luchan contra las máquinas y descubren la verdad detrás de la invasión.
+            </p>
         </div>
-      </div>
-      <div class="tech">
-        <span class="tech-num">04</span>
-        <div>
-          <h4>Kaioken</h4>
-          <p>Multiplica temporalmente su fuerza, velocidad y poder de combate.</p>
+        
+        <div class="footer"><h3>Personajes</h3>
+            <div class="perj">
+                <div class="pic1">
+                    <h3>2B</h3>
+                    <p>Android de combate con una personalidad compleja y un fuerte sentido de deber.</p>
+                </div>
+                <div class="pic2">
+                    <h3>9S</h3>
+                    <p>Android de reconocimiento con una personalidad curiosa y un fuerte deseo de descubrir la verdad.</p>
+                </div>
+                <div class="pic3">
+                    <h3>A2</h3>
+                    <p>Android de combate renegada con una personalidad fuerte y un pasado misterioso.</p>
+                </div>
+            </div>
+            <div class="desarrolladores">
+                <p>Platinum Games, Square Enix, Yoko Taro, Monaca ©️</p>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- STATS -->
-  <section id="stats" class="stats">
-    <h2>Estadísticas de Poder</h2>
-    <div class="stats-container">
-      <div class="stat-bar">
-        <span>Fuerza</span>
-        <div class="bar"><div class="fill" style="width: 98%;"></div></div>
-      </div>
-      <div class="stat-bar">
-        <span>Velocidad</span>
-        <div class="bar"><div class="fill" style="width: 95%;"></div></div>
-      </div>
-      <div class="stat-bar">
-        <span>Control de Ki</span>
-        <div class="bar"><div class="fill" style="width: 90%;"></div></div>
-      </div>
-      <div class="stat-bar">
-        <span>Inteligencia de combate</span>
-        <div class="bar"><div class="fill" style="width: 80%;"></div></div>
-      </div>
-      <div class="stat-bar">
-        <span>Determinación</span>
-        <div class="bar"><div class="fill" style="width: 100%;"></div></div>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <p>Página creada como proyecto personal · Homenaje al universo Dragon Ball</p>
-  </footer>
-
-</body>
+    </body>
 </html>
